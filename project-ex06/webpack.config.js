@@ -5,6 +5,13 @@ module.exports = {
         path: path.resolve('public'),
         filename: 'bundle.js'
     },
+    module: {
+        rules: [{
+            test: /\.js$/,
+            exclude: /node_modules/,
+            loader: 'babel-loader'
+        }]
+    },
     devServer: {
         contentBase: path.resolve('public'),
         host: '0.0.0.0',
