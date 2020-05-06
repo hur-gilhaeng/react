@@ -6,4 +6,6 @@
 .idea
 .vscode
 .sln
+
+#tmp
 _project-ex08
