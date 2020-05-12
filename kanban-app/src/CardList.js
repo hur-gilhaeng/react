@@ -16,6 +16,7 @@ export default class CardList extends React.Component {
                     status={ card.status }
                     description={ card.description }
                     tasks={ card.tasks }
+                    taskCallbacks={ this.props.taskCallbacks }
                 />) }
             </div>
         )
